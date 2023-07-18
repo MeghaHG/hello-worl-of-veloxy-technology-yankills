@@ -23,7 +23,7 @@
       </tr>
 
       <tr>
-         <th><label for="">Name : </label></th>
+         <th><label for="">Nav sang re : </label></th>
          <th><input type="text"></th>
       </tr>
 
