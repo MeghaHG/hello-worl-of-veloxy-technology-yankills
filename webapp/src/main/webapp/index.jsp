@@ -11,7 +11,7 @@
 <body>
    <table border="1px solid black" ; width="45%">
       <tr align="center" style="background-color: rgb(33, 123, 213);">
-         <th colspan="2">Registration Form</th>
+         <th colspan="2">bebudi cha Form</th>
       </tr>
 
       <tr align="center" style="background-color: rgb(78, 78, 227);">
