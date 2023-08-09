@@ -1,57 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-   <table border="1px solid black" ; width="45%">
-      <tr align="center" style="background-color: orange;">
-	      <th colspan="2"> Jai Hind Jai Bharat </th>
-      </tr>
 
-      <tr align="center" style="background-color: white;">
-         <th colspan="2">Sign UP</th>
-      </tr>
+    <p id="construct"></p>
 
-      <tr align="center" style="background-color: green;">
-         <th colspan="2">Sign Up</th>
-      </tr>
+    <button type="button" onclick="func()">output</button>
 
-      <tr>
-         <th><label for="">Name Please: </label></th>
-         <th><input type="text"></th>
-      </tr>
+    <script>
+        class Cards{
+            constructor(){
+                this.name1 = 'Megha'
+                this.name2 = 'Harshal'
+                this.name3 = 'Girase'
+            }
+        }
 
-      <tr>
-         <th><label for="">MObile No : </label></th>
-         <th><input type="number"></th>
-      </tr>
+        const c= new Cards();
+        console.log(c.name1+" "+c.name2+" "+c.name3)
 
-      <tr>
-         <th><label for="">Gender</label></th>
-         <th><input type="radio" name="gender">Male
-            <input type="radio" name="gender">Female
-         </th>
-      </tr>
 
-      <tr>
-         <th><label for="">Date of Birth</label></th>
-         <th><input type="date"></th>
-      </tr>
+        function Gaurav(last, age, mobno){
+            this.last = 'Parmar'
+            this.age = 21
+            this.mobno = 9087654534
+        }
+        const g = new Gaurav()
+        console.log(g.last+" "+g.age+" "+g.mobno)
 
-      <tr>
-         <th colspan="2"><button type="button">Submit</button>
-            <button type="button">Reset</button>
-	     <button type="button">Forgot Password</button>
-         </th>
-      </tr>
+        document.getElementById("construct").innerHTML=
+        "Gaurav age is " + g.age + " ";
 
-   </table>
+        function func(){
+            const g = new Gaurav();
+            document.write(g.last+" "+g.age+" "+g.mobno)
+        }
+    </script>
 </body>
-<h1> Thank You Guys</h1>
 </html>
